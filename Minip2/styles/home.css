@@ -3,56 +3,200 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
-.container {
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#quiz {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #c0e7da;
-    padding: 60px; /* Aumentei o padding */
-    width: 60%; /* Aumentei a largura */
+    max-width: 50%;
+    width: 100%;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-h2 {
+.perguntas-status {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.perguntas-falta, .perguntas-respondidas {
+    font-size: 1rem;
+    font-weight: bold;
     color: #333;
-    font-size: 2rem; /* Aumentei o tamanho da fonte */
+}
+
+.questao {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pergunta {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: rgba(229, 236, 119, 0.8);
+}
+
+.certou-errou {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.descricao {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #494747;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
     border: 1px solid #8f8fe0;
     border-radius: 5px;
-    padding: 15px 30px; /* Aumentei o padding do botão */
-    background-color: #e0f7fa;
-    color: #333;
-    font-size: 1.2rem; /* Aumentei o tamanho da fonte do botão */
+    padding: 10px;
+    width: 48%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #a9e062d2;
+#proPergunta:hover {
+    background-color: #bde08f;
 }
 
-button a {
-    text-decoration: none;
-    color: inherit;
+#encerrar-quiz:hover {
+    background-color: #e08f8f;
 }
 
-footer {
-    background-color: #a4a4b9;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #000000;
+/* estilizacao do popUp */
+#pop::backdrop{
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+#pop{
+    background-color: #d3dcdd;
+    border: none;
+    border-radius: 10px;
+    padding: 10rem
+}
+
+.btnpop:hover{
+    background-color: #8f8fe0;
+}
+#compartilhar {
+    background-color: transparent;
+    border: none;
+}
+
+#compartilhar img {
+    width: 40%; 
+}
+
+#compartilhar img:hover {
+    opacity: 0.8; 
+}
+
+@media (max-width: 1080px) {
+    #quiz {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 10px;
+    }
+
+    #quiz {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .perguntas-status {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .perguntas-falta, .perguntas-respondidas {
+        font-size: 0.9rem;
+    }
+
+    .questao {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .pergunta {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-bottom: 15px;
+    }
+
+    li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .certou-errou, .descricao {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button:last-child {
+        margin-bottom: 0;
+    }
+
+    #pop {
+        padding: 8rem;
+    }
+
+    #compartilhar img {
+        width: 60%;
+    }
 }
