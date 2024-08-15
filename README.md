@@ -6,6 +6,6 @@ Projeto 1 -> Uma lista de tarefas com algumas funcionalidades aplicadas, como a 
 
 Projeto 2 -> Quiz com questões que variam diariamente. 
 
-  Atenção!
+    Atenção!
 
-  Abrir na IDE e executar a home.hmtl!
+    Abrir na IDE e executar a home.hmtl!
