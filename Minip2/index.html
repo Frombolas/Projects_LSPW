@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <h1>QUIZ</h1>
+
+    <div id="quiz" class="hidden">
+        <div class="perguntas-status">
+            <div class="perguntas-falta">Questões restantes: <span id="questoes-falta">10</span></div>
+            <div class="perguntas-respondidas">Respondidas: <span id="questoes-respondidas">0</span></div>
+        </div>
+        <h2 class="questao">Título da questão</h2>
+        <p class="pergunta">Aqui vai a pergunta.</p>
+        <ul class="alternativas">
+            <!-- Alternativas serão inseridas aqui pelo JavaScript -->
+        </ul>
+        <div class="certou-errou">
+            <!-- Resposta correta ou incorreta -->
+        </div>
+        <div class="descricao">
+            <!-- Descrição ou feedback sobre a questão -->
+        </div>
+        <div class="botoes">
+            <button id="proPergunta">Próxima Pergunta</button>
+            <button id="encerrar-quiz">Encerrar Quiz</button>
+        </div>
+    </div>
+    <div id="popUp">
+        <dialog id="pop">
+            <h2>Resultado do Quiz</h2>
+            <p id="result"></p>
+            <button class= "btnpop" id="reiniciar">Reiniciar</button>
+            <button class= "btnpop" id="fechar">Sair</button> 
+            <button class= "btnpop" id="compartilhar">
+                <img src="imgs/x_logo.jpeg" alt="X logo" >
+            </button> 
+        </dialog>
+    </div>
+    <audio id="audCerto" src="audios/respostacerta.m4a"></audio>
+    <audio id="audErrado" src="audios/respostaerrada.m4a"></audio>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

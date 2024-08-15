@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c0e7da;
+    padding: 60px; /* Aumentei o padding */
+    width: 60%; /* Aumentei a largura */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem; /* Aumentei o tamanho da fonte */
+}
+
+button {
+    border: 1px solid #8f8fe0;
+    border-radius: 5px;
+    padding: 15px 30px; /* Aumentei o padding do botão */
+    background-color: #e0f7fa;
+    color: #333;
+    font-size: 1.2rem; /* Aumentei o tamanho da fonte do botão */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a9e062d2;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #a4a4b9;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #000000;
+}
